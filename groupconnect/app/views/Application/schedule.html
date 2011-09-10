@@ -1,0 +1,55 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<div class="container">
+	
+	<div class="base-unit"></div>
+  		<section id="about">
+  		<div class="page-header">
+    	<h1>Schedule an event <small>Tell us what, who and when</small></h1>
+  	</div>
+  		  
+	<div class="row">
+		<div class="span2 columns">&nbsp;</div>
+	  	<div class="span8 columns">
+		    <form id="form-download" method="post" action="/schedule">
+		    	<fieldset>
+		    		<div class="clearfix">
+		    			<label for="">Title</label>
+			    		<div class="input">
+			            	<input class="xlarge" id="title" name="title" size="30" type="text">
+			            </div>
+                 	</div>
+                 	<div class="clearfix">
+		    			<label for="">Your name</label>
+			    		<div class="input">
+			            	<input class="xlarge" id="name" name="name" size="30" type="text">
+			            </div>
+                 	</div>
+                 	<div class="clearfix">
+		    			<label for="">Days</label>
+			    		<div class="input">
+			            	<!-- use http://jqueryui.com/demos/datepicker? -->
+			            </div>
+                 	</div>
+		    	</fieldset>				    	
+		    </form>
+	  	</div>
+	  	<div class="span6 columns">
+	      <h3>How does it work?</h3>
+	      <p>Schedule your event on GroupConnect, and a participation and admin link will be created.</p>
+	      <ul>
+	      	<li><strong>Easy scheduling</strong> of events</li>
+	        <li><strong>Invite</strong> friends</li>
+	        <li>You and your friends <strong>import your online calendars</strong></li>
+	        <li><strong>Confirm</strong> date and time</li>
+	      </ul>
+	    </div>
+	</div>
+	
+	<div class="row">
+		<div class="span5 columns">&nbsp;</div>
+	  	<div class="span11 columns"><a id="btn-schedule" href="/confirm" class="btn large primary">Schedule</a></div>
+	</div>
+
+</div>
