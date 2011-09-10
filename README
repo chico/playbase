@@ -1,0 +1,16 @@
+
+Download Play - http://www.playframework.org/download
+
+Add play dir to your PATH environment variable
+
+Install and setup git if you haven't already - http://help.github.com/
+
+git clone git@github.com:chico/playbase.git
+
+cd playbase/groupconnect
+
+play run
+
+--
+
+Check out the play tutorial http://www.playframework.org/documentation/1.2.3/guide1
