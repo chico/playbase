@@ -11,6 +11,8 @@ GET     /schedule                             	Application.schedule
 
 GET     /confirm                             	Application.confirm
 
+GET     /plan                             		Application.plan
+
 GET     /{uid}                              	Application.view
 
 # Ignore favicon requests

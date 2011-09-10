@@ -1,0 +1,84 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<div class="container">
+	
+	<div class="base-unit"></div>
+  		<section id="about">
+  		<div class="page-header">
+    	<h1>Who wants to meet up for ...? <small>Tell us what, when and who to invite and we'll do the rest</small></h1>
+  	</div>
+  		  
+	<div class="row">
+		<div class="span2 columns">&nbsp;</div>
+	  	<div class="span8 columns">
+		    <form id="form-download" method="post" action="/schedule">
+		    	<fieldset>
+		    		<div class="clearfix">
+		    			<label for="">What</label>
+			    		<div class="input">
+			            	<select id="what" name="what">
+				                <option value="beers">beers</option>
+				                <option value="coffee">coffee</option>
+				                <option value="coffee">food</option>
+				                <option value="coffee">cinema</option>				                
+			              	</select>
+			            </div>
+                 	</div>
+                 	<div class="clearfix">
+		    			<label for="">When</label>
+			    		<div class="input">
+			            	<select id="what" name="what">
+				                <option value="today">today</option>
+				                <option value="tomorrow">tomorrow</option>
+				                <option value="thisweek">this week</option>
+				                <option value="thismonth">this month</option>				                
+			              	</select>
+			            </div>
+                 	</div>
+                 	<div class="clearfix">
+		    			<label for="">Share</label>
+			    		<div class="input">
+			            	<ul class="inputs-list">
+				                <li>
+				                  <label>
+				                    <input type="checkbox" name="optionsCheckboxes" value="facebook">
+				                    <span>Facebook</span>
+				                  </label>
+				                </li>
+				                <li>
+				                  <label>
+				                    <input type="checkbox" name="optionsCheckboxes" value="twitter">
+				                    <span>Twitter</span>
+				                  </label>
+				                </li>
+				                <li>
+				                  <label>
+				                    <input type="checkbox" name="optionsCheckboxes" value="linkedin">
+				                    <span>LinkedIn</span>
+				                  </label>
+				                </li>
+				        	</ul>
+			            </div>
+                 	</div>
+		    	</fieldset>				    	
+		    </form>
+	  	</div>
+	  	<div class="span6 columns">
+	      <h3>How does it work?</h3>
+	      <p>Tell us what and when, and we'll send a link to your friends on Facebook and/or Twitter.</p>
+	      <ul>
+	      	<li><strong>Quick &amp; easy scheduling</strong></li>
+	        <li><strong>Invite</strong> your online friends</li>
+	        <li><strong>Confirm</strong> time and place</li>
+	        <li>Get <strong>recommended</strong> meetup spots</li>
+	      </ul>
+	    </div>
+	</div>
+	
+	<div class="row">
+		<div class="span5 columns">&nbsp;</div>
+	  	<div class="span11 columns"><a id="btn-schedule" href="/confirm" class="btn large primary">Send</a></div>
+	</div>
+
+</div>
